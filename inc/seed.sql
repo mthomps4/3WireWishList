@@ -22,5 +22,6 @@ CREATE TABLE IF NOT EXISTS `ADMIN-USER` (
   PRIMARY KEY  (`ID`)
 );
 
+INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES (`RoyUnderhill`, `woodwrightShop`);
 
 --INSERT INTO `products` (`sku`, `name`, `img`, `price`, `paypal`) VALUES(101, 'Logo Shirt, Red', 'img/shirts/shirt-101.jpg', 18.00, '9P7DLECFD4LKE');
