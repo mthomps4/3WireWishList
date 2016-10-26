@@ -10,10 +10,4 @@ try{
   exit;
 }
 
-//If database !exisit
-//Create all and populate seed data
-
-//else check table exist keep moving on ...
-
-
 ?>

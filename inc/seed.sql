@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `WishList` (
     `TYPE` varchar(255) NOT NULL default '',
     `IMAGE` varchar(255) default '',
     `URL` varchar(255) default '',
-    `PRICE` decimal NOT NULL default '0.00',
+    `PRICE` decimal(6,2) NOT NULL default '0.00',
     `SOURCE` varchar(255) NOT NULL default '',
     `NOTES` varchar(255) default '',
     `OBTAINED` boolean NOT NULL default '0',
@@ -22,6 +22,6 @@ CREATE TABLE IF NOT EXISTS `ADMIN-USER` (
   PRIMARY KEY  (`ID`)
 );
 
-INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES (`RoyUnderhill`, `woodwrightShop`);
+INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES ("RUnderhill", "password");
 
---INSERT INTO `products` (`sku`, `name`, `img`, `price`, `paypal`) VALUES(101, 'Logo Shirt, Red', 'img/shirts/shirt-101.jpg', 18.00, '9P7DLECFD4LKE');
+INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`) VALUES (NULL, 'Book1 ', 'Book', 'ImageURL', 'SourceURL', '9.99', 'Lost Art Press', 'A lot of Notes ... ', '0');
