@@ -1,6 +1,14 @@
 <?php
+session_start();
 require './inc/functions.php';
 include './Partials/_header.php';
+?>
+
+<?php
+  if(isset($_SESSION['errorLoginMsg'])){
+    echo"<h4>". $_SESSION['errorLoginMsg'] . "</h4>";
+    session_unset($_SESSION['errorLoginMsg']);
+  }
 ?>
 
 <div>

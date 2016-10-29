@@ -22,6 +22,6 @@ CREATE TABLE IF NOT EXISTS `ADMIN-USER` (
   PRIMARY KEY  (`ID`)
 );
 
-INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES ("RUnderhill", "password");
+INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES ("Admin", "password");
 
 INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`) VALUES (NULL, 'Book1 ', 'Book', 'ImageURL', 'SourceURL', '9.99', 'Lost Art Press', 'A lot of Notes ... ', '0');

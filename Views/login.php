@@ -69,3 +69,7 @@ include '../Partials/_header.php';
 
 
 </div>
+
+<?php
+include '../Partials/_footer.php';
+?>
