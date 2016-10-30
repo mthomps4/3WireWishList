@@ -7,14 +7,20 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-      <link rel="stylesheet" href="../Styles/main.css">
+      <link rel="stylesheet" href="../../Styles/main.css">
 </head>
 <body>
 
 <hr>
-
 <header>
-<h1> 3Wire Wish List </h1>
-</header>
+    <h1> 3Wire Wish List </h1>
 
+    <?php
+    if(isset($_SESSION['logged_in'])){
+      echo "<button><a href='../../inc/logout.php'>Logout</a></button>";
+      }else{
+      echo "<button><a href='../../Views/login.php'>Admin Login</a></button>";
+      }
+    ?>
+</header>
 <hr>

@@ -30,7 +30,7 @@ INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`,
 VALUES (
   NULL,
   'The Anarchists Tool Chest',
-  'Book',
+  'Books',
   'https://c7.staticflickr.com/6/5767/30019977974_dc0ea261da_o.jpg',
   'https://lostartpress.com/collections/books/products/the-anarchists-tool-chest',
   '57.50',
@@ -43,8 +43,8 @@ INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`,
 VALUES (
   NULL,
   'By Hand and Eye',
-  'Book',
-  'https://c1.staticflickr.com/6/5685/30534462472_47ca063f15_o.jpg',
+  'Books',
+  'https://c1.staticflickr.com/6/5685/30534462472_0e54422829_o.jpg',
   'https://lostartpress.com/collections/books/products/by-hand-eye-1',
   '33.75',
   'Lost Art Press',
@@ -56,8 +56,8 @@ INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`,
 VALUES (
   NULL,
   'Vols. I & II of The Woodworker: The Charles H. Hayward Years: Tools & Techniques',
-  'Book',
-  'https://c5.staticflickr.com/6/5667/30534462732_b9a9107f14_o.jpg',
+  'Books',
+  'https://c5.staticflickr.com/6/5667/30534462732_23c2aa6d0b_o.jpg',
   'https://lostartpress.com/collections/books/products/the-woodworker-the-charles-hayward-years',
   '80.00',
   'Lost Art Press',
@@ -69,7 +69,7 @@ INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`,
 VALUES (
   NULL,
   'The Unplugged Woodshop: Hand-Crafted Projects for the Home & Shop',
-  'Book',
+  'Books',
   'https://c1.staticflickr.com/6/5502/30534462512_32b017159f_o.jpg',
   'https://theunpluggedwoodshop.myshopify.com/collections/books/products/the-unplugged-woodshop-book',
   '30.00',
@@ -134,8 +134,21 @@ VALUES (
 INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`)
 VALUES (
   NULL,
+  'Veritas Bench Plane Kit',
+  'Tool',
+  'https://c1.staticflickr.com/6/5636/30615359776_f4be03b920_o.jpg',
+  'http://www.leevalley.com/US/wood/Page.aspx?p=71379&cat=1,230',
+  '44.50',
+  'Veritas',
+  'With this kit (and basic woodworking skills) you can build a bevel-down wood-bodied smooth plane with a Norris-style mechanism for easy depth and lateral adjustment. The kit includes a blade, a Norris-style adjuster with a steel cup to seat it in, plus a knob, tapped insert and cross pin for the lever cap, all made of brass. The lapped blade (available in A2, O1 or PM-V11® steel) is 1/8in thick and 1-5/8in wide with a 25° bevel.',
+  '1'
+);
+
+INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`)
+VALUES (
+  NULL,
   'Mortise and Tenon Magazine -- Issue Two',
-  'Book',
+  'Books',
   'https://c6.staticflickr.com/6/5687/30651377285_26b9248146_o.jpg',
   'http://mortise-tenon-magazine.myshopify.com/collections/magazine/products/issue-two',
   '24.00',

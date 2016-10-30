@@ -1,12 +1,134 @@
 /* *************
 Light Blue #03A9F4
 100 Blue Grey #CFD8DC
+Dark Blue Gray #263238
+
 
 **************** */
 
+*{
+  box-sizing: border-box;
+}
 
-
+ul,li,a{
+  text-decoration: none;
+}
 
 body{
-  background-color:#CFD8DC;
+  background-color:#eee;
+}
+
+/*****HEADER *****/
+header{
+ width: 100%;
+ display:flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+header h1{
+  margin-right: auto;
+  margin-left:10%;
+}
+
+header button{
+  margin-right:10%;
+  height:50px;
+  border:2px ridge white;
+  background-color: #0277BD;
+  border-radius:10% 30%;
+  color:white;
+
+  transition:.5s;
+}
+
+header button a, header button a:visited{
+  color: white;
+}
+
+header button:hover{
+  opacity:.8;
+  border-radius:30% 10%;
+  background-color:green;
+}
+
+/*****HOME PAGE *****/
+.Container{
+  width:90%;
+  margin:0 auto;
+}
+
+#Filter{
+  display: flex;
+  align-items: center;
+  float:right;
+  margin-right: 10%;
+}
+
+#Filter p{
+  margin-right: 10px;
+}
+
+.Cards{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+.itemCard{
+  background-color:#01579B;
+  /*flex-grow:1;*/
+  width:29%;
+  height: 400px;
+  margin:20px;
+  color:white;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+}
+
+
+.imageWrap{
+  width:100%;
+  height:200px;
+  overflow:hidden;
+  background:black;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border:2px solid black;
+  border-bottom:6px solid black;
+}
+
+.cardImage{
+  width:100%;
+}
+
+.cardTitle{
+  text-align: center;
+}
+
+.cardInfo{
+  margin-left:20px;
+  margin-right: 20px;
+  opacity:.9;
+}
+
+.cardSourceSite{
+  float:left;
+  color:white;
+  text-decoration: underline;
+  opacity:.83;
+}
+
+.cardMoreDetails{
+  float:right;
+  color:white;
+  text-decoration: underline;
+  opacity:.83;
+}
+
+.cardMoreDetails:hover, .cardSourceSite:hover{
+  opacity:1;
 }

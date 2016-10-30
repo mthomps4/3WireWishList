@@ -13,10 +13,8 @@ function getWishList($filter = null){
 
   if($filter == "false"){
     $sql = "SELECT * FROM `wishlist`"; //get all
-    echo $sql;
   }else{
     $sql = "SELECT * FROM `wishlist` WHERE `type`= ?"; //$filter = Select options Book,Tool,Other
-    echo $sql;
   }
 
   try{
@@ -99,7 +97,7 @@ function update_item($Name, $Type, $ImageUrl, $SourceUrl, $Price, $Source, $Note
 
 function delete_item($id){
 
-  
+
 }
 
 
