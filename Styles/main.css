@@ -37,8 +37,11 @@ header h1{
   font-weight: 100;
 }
 
-header button{
+header a{
   margin-right:10%;
+}
+
+header a button{
   height:50px;
   border:2px ridge white;
   background-color: #0277BD;
@@ -47,11 +50,11 @@ header button{
   transition:.5s;
 }
 
-header button a, header button a:visited{
+header a, header a:visited{
   color: white;
 }
 
-header button:hover{
+header a button:hover{
   opacity:.8;
   border-radius:30% 10%;
   background-color:green;
@@ -100,17 +103,13 @@ footer p{
 
 .Container h1{
   font-weight: 100;
-
 }
 
 #Filter{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin-right: 10%;
-}
-
-#Filter h1{
-  margin-right: auto;
 }
 
 #Filter p{
@@ -154,6 +153,7 @@ footer p{
 
 .cardTitle{
   text-align: center;
+  margin:10px;
 }
 
 .cardInfo{
@@ -245,17 +245,110 @@ footer p{
   background-color:red;
 }
 
-.addButton{
-  background-color:#689F38;
-  border-radius: 10px;
+
+.AddNav{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.AddNav h1{
   margin-right: auto;
+}
+
+.addButton{
+  background-color:#388E3C;
+  border-radius: 10px;
+  height: 30px;
   padding:5px 15px;
 }
 
-.addButton a, .addButton a:visited{
+.addButton, .addButton:visited{
   color:white;
 }
 
 .addButton:hover{
-  background-color: #8BC34A;
+  background-color: #43A047;
+}
+
+/*****ADD/Edit Form *****/
+.entryForm {
+  width:50%;
+}
+
+.entryForm label{
+  opacity: .83;
+  margin: 10px;
+}
+
+.entryForm input{
+  margin:10px;
+  width:100%;
+  opacity: .9;
+}
+
+.entryForm textarea{
+  margin:10px;
+  width:100%;
+  opacity: .9;
+}
+
+.entryForm .selectBox{
+  margin:10px;
+  width:100%;
+  opacity: .9;
+}
+
+.entryForm .checkbox{
+  width:20px;
+  opacity: .9;
+}
+
+.entryForm input[type=checkbox] {
+  width:20px;
+  height:20px;
+}
+
+
+.entryForm .submitButton{
+  width: 25%;
+  float:right;
+  padding: 5px;
+}
+
+/*****Delete Form *****/
+.deleteTable{
+  opacity: .83;
+}
+
+.confirm{
+  display:flex;
+  margin-top:20px;
+}
+
+.confirm a, .confirm a:visited{
+  color:white;
+}
+
+.confirmDelete{
+  margin-right: 10px;
+  padding:5px;
+  background-color:#B71C1C;
+  color:white;
+}
+
+.confirmDelete:hover{
+  background-color: red;
+}
+
+.cancelDelete{
+  margin-right: 10px;
+  padding:5px;
+  background-color:#FF9800;
+  color:white;
+}
+
+.cancelDelete:hover{
+  background-color:#EF6C00;
 }

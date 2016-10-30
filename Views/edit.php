@@ -56,19 +56,23 @@ include '../Partials/_header.php';
 
 <?php if(isset($error_message)){echo"<h4>". $error_message . "</h4>";}?>
 
+<div class=subNav>
+  <a href="../adminIndex.php">Back to list</a>
+</div>
+
+
+<div class="Container">
 <h1> Edit Item </h1>
-<a href="../adminIndex.php">Back to list</a>
-<a href="../inc/logout.php">Logout</a>
 
 
-<form method="post" action="#">
+<form class="entryForm" method="post" action="#">
 
   <label for="NAME"> Name </label>
     <input type="text" id="NAME" name="NAME" value="<?php echo $Name ?>" placeholder="Name">
     <br>
 
   <label for="TYPE"> Category </label>
-      <select id="TYPE" name="TYPE">
+      <select class="selectBox" id="TYPE" name="TYPE">
         <option value="false" <?php if($Type == "false"){echo " selected";}?>>Select One</option>
         <option value="Books"<?php if($Type == "Books"){echo " selected";}?>>Books</option>
         <option value="Tools"<?php if($Type == "Tools"){echo " selected";}?>>Tools</option>
@@ -96,13 +100,13 @@ include '../Partials/_header.php';
     <textarea id="NOTES" name="NOTES" rows="5" cols="50"><?php echo $Notes ?></textarea>
     <br>
 
-  <label for="OBTAINED"> Obtained </label>
-    <input type="checkbox" id="OBTAINED" name="OBTAINED" <?php if($Obtained == 1){echo " checked";}?>/>
+  <label for="OBTAINED"> Obtained: </label>
+    <input class="checkbox" type="checkbox" id="OBTAINED" name="OBTAINED"<?php if($Obtained == 1){echo " checked";}?>/>
     <br>
 
-  <input type="submit" value="Save Item" />
+  <input class="submitButton" type="submit" value="Save Item" />
 </form>
-
+</div>
 
 <?php
 include '../Partials/_footer.php';

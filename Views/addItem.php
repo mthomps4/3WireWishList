@@ -43,19 +43,24 @@ include '../Partials/_header.php';
 
 <?php if(isset($error_message)){echo"<h4>". $error_message . "</h4>";}?>
 
+
+<div class=subNav>
+  <a href="adminIndex.php">Back to list</a>
+</div>
+
+
+<div class="Container">
 <h1> Add Item </h1>
-<a href="adminIndex.php">Back to list</a>
-<a href="../inc/logout.php">Logout</a>
 
 
-<form method="post" action="#">
+<form class="entryForm" method="post" action="#">
 
   <label for="NAME"> Name </label>
     <input type="text" id="NAME" name="NAME" value="" placeholder="Name">
     <br>
 
-  <label for="TYPE"> Category </label>
-      <select id="TYPE" name="TYPE">
+  <label for="TYPE"> Type </label>
+      <select class="selectBox" id="TYPE" name="TYPE">
         <option value="false">Select One</option>
         <option value="Books">Books</option>
         <option value="Tools">Tools</option>
@@ -84,13 +89,13 @@ include '../Partials/_header.php';
     <br>
 
   <label for="OBTAINED"> Obtained </label>
-    <input type="checkbox" id="OBTAINED" name="OBTAINED"/>
+    <input class="checkbox" type="checkbox" id="OBTAINED" name="OBTAINED"/>
     <br>
 
-  <input type="submit" value="Add Item" />
+  <input class="submitButton" type="submit" value="Add Item" />
 </form>
 
-
+</div>
 <?php
 include '../Partials/_footer.php';
 ?>

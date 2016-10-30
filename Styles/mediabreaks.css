@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1042px) {
+  .itemCard{
+    width:28%;
+    margin:5% auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 925px) {
+  .itemCard{
+    width:40%;
+    margin:20px auto;
+  }
+
+  .entryForm{
+    width:75%;
+    margin:0 auto;
+  }
+
+  .submitButton{
+    min-width: 200px;
+  }
+
+  .noShow{
+    display:none;  /*Removes Remove Source URL from List*/
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .noShow2{
+      display:none;  /*Removes Source and Notes from List*/
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+  .itemCard{
+    width:52%;
+    margin:20px auto;
+  }
+
+  header h1, .Container h1{
+    font-size: 2em;
+  }
+
+  .detailsImage{
+    float:none;
+    width:75%;
+    margin:20px auto;
+  }
+
+  .detailsCard{
+    float:none;
+    width:75%;
+    margin:0 auto;
+    margin-top:50px;
+  }
+
+  .entryForm{
+    width:100%;
+    margin:0 auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 525px) {
+  .itemCard{
+    width:75%;
+    margin:20px auto;
+  }
+
+  header h1, .AddNav h1{
+    font-size: 1.5em;
+    margin-right: 20px;
+  }
+
+  .addButton{
+    width:50%;
+    min-width: 100px;
+  }
+
+  .noShow3{
+    display:none;  /*Removes ID, Image, Obtained from List*/
+  }
+
+  #deleteH1{
+    font-size: 1em;
+    opacity: 1;
+    font-weight: 700;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .itemCard{
+    width:90%;
+    margin:20px auto;
+  }
+
+  .detailsImage{
+    width:90%;
+  }
+
+  .detailsCard{
+    width:90%;
+  }
+
+  .noShow4{
+    display:none; /*Removes Price from List*/
+  }
+
+}

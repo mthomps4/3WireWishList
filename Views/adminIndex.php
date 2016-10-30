@@ -20,9 +20,12 @@ include '../Partials/_header.php';
 
 <div class="Container">
 
-<div id="Filter">
+<div class="AddNav">
   <h1> Admin Dashboard </h1>
-  <button class="addButton"><a href="addItem.php"> Add Item </a></button>
+  <a href="addItem.php"><button class="addButton"> Add Item </button></a>
+</div>
+
+<div id="Filter">
   <p>Filter Results:</p>
       <form method='post' action='#'>
           <select name="Filter">
@@ -40,37 +43,35 @@ include '../Partials/_header.php';
 
   echo "<table id='AdminTable'>";
   echo "<tr>";
-    echo "<th> Id </th>";
-    echo "<th> Image </th>";
+    echo "<th class='noShow3'> Id </th>";
+    echo "<th class='noShow3'> Image </th>";
     echo "<th> Name </th>";
     // echo "<th> Type </th>";
-    echo "<th> Source URL </th>";
-    echo "<th> Price </th>";
-    echo "<th> Source </th>";
-    echo "<th> Notes </th>";
-    echo "<th> Obtained </th>";
+    echo "<th class='noShow'> Source URL </th>";
+    echo "<th class='noShow4'> Price </th>";
+    echo "<th class='noShow2'> Source </th>";
+    echo "<th class='noShow2'> Notes </th>";
+    echo "<th class='noShow3'> Obtained </th>";
     echo "<th> </th>";
     echo "<th> </th>";
   echo "</tr>";
   foreach($wishlist as $item){
     echo "<tr>";
-      echo "<td>". $item['ID'] ."</td>";
-      echo "<td><img src= '". $item['IMAGE'] ."' width=50px height=50px/></td>";
+      echo "<td class='noShow3'>". $item['ID'] ."</td>";
+      echo "<td class='noShow3'><img src= '". $item['IMAGE'] ."' width=50px height=50px/></td>";
       echo "<td>". $item['NAME'] ."</td>";
-      // echo "<td>". $item['TYPE'] ."</td>";
-      // echo "<td><img src= '". $item['IMAGE'] ."' width=50px /></td>";
-      echo "<td>". substr($item['URL'],0,20) ."</td>";
-      echo "<td>". $item['PRICE'] ."</td>";
-      echo "<td>". $item['SOURCE'] ."</td>";
-      echo "<td>". substr($item['NOTES'], 0, 30) ."</td>";
+      echo "<td class='noShow'>". substr($item['URL'],0,20) ."</td>";
+      echo "<td class='noShow4'>". $item['PRICE'] ."</td>";
+      echo "<td class='noShow2'>". $item['SOURCE'] ."</td>";
+      echo "<td class='noShow2'>". substr($item['NOTES'], 0, 30) ."</td>";
 
       //echo "<td>". $item['OBTAINED'] ."</td>";
       if($item['OBTAINED'] == true){
-        echo "<td> Yes </td>";
+        echo "<td class='noShow3'> Yes </td>";
       }elseif($item['OBTAINED'] == false) {
-        echo "<td> No </td>";
+        echo "<td class='noShow3'> No </td>";
       }else{
-        echo "<td> NULL </td>";
+        echo "<td class='noShow3'> NULL </td>";
       }
 
       echo "<td><button class='editButton'><a href='edit.php/?id=" . $item['ID'] . "'> Edit </a></button></td>";

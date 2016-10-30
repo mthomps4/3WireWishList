@@ -44,16 +44,21 @@ if (isset($_GET['id'])){
 
   <?php if(isset($error_message)){echo"<h4>". $error_message . "</h4>";}?>
 
-  <h1> Delete Item </h1>
-  <a href="../adminIndex.php">Back to list</a>
-  <a href="../inc/logout.php">Logout</a>
+  <div class=subNav>
+    <a href="../adminIndex.php">Back to list</a>
+  </div>
 
-<h3> Would you like to delete this item?</h3>
+
+  <div class="Container">
+
+  <h1 id="deleteH1"> Would you like to delete this item?</h1>
 
 <div>
-  <table>
-
-    <thead><?php echo $Name; ?></thead>
+  <table class="deleteTable">
+    <tr>
+      <td><b>Name: </b></td>
+      <td><?php echo $Name; ?></td>
+    </tr>
 
     <tr>
       <td><b>Type: </b></td>
@@ -62,12 +67,12 @@ if (isset($_GET['id'])){
 
     <tr>
       <td><b>Image URL: </b></td>
-      <td><?php echo $ImageUrl; ?> </td>
+      <td><?php echo substr($ImageUrl,0,30). "..."; ?> </td>
     </tr>
 
     <tr>
       <td><b>Source URL: </b></td>
-      <td><?php echo $SourceUrl; ?> </td>
+      <td><?php echo substr($SourceUrl,0,30) . "..."; ?> </td>
     </tr>
 
     <tr>
@@ -82,7 +87,7 @@ if (isset($_GET['id'])){
 
     <tr>
       <td><b>Notes: </b></td>
-      <td><?php echo $Notes; ?> </td>
+      <td><?php echo substr($Notes,0,50) . "..."; ?> </td>
     </tr>
 
     <tr>
@@ -93,14 +98,16 @@ if (isset($_GET['id'])){
   </table>
 </div>
 
-<form method="post" action="#">
-  <input type="hidden" value="<?php echo $id; ?>" name="ID" />
-  <button type='submit'>Yes, Delete</button>
-</form>
+<div class="confirm">
+  <form method="post" action="#">
+    <input type="hidden" value="<?php echo $id; ?>" name="ID" />
+    <button class="confirmDelete" type='submit'>Yes, Delete</button>
+  </form>
 
-<button><a href="../adminIndex.php">No, Cancel</a></button>
+  <a href="../adminIndex.php"><button class="cancelDelete" >No, Cancel</button></a>
+</div>
 
-
+</div>
   <?php
   include '../Partials/_footer.php';
   ?>
