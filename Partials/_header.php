@@ -17,6 +17,7 @@
 
     <?php
     if(isset($_SESSION['logged_in'])){
+      echo "<button style='margin-right:2%';><a href='../../Views/adminIndex.php'>Dashboard</a></button>";
       echo "<button><a href='../../inc/logout.php'>Logout</a></button>";
       }else{
       echo "<button><a href='../../Views/login.php'>Admin Login</a></button>";

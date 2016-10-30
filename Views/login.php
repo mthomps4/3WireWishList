@@ -45,31 +45,31 @@ if (isset($_POST['submit'])) {
 include '../Partials/_header.php';
 ?>
 
-
-<h1> Login </h1>
-<a href="/"> back to home </a>
-
-<div id="login">
-
-<h2>Login Form</h2>
-
-<?php
-  if(isset($_SESSION['errorLoginMsg'])){
-      echo "<h4>" . $_SESSION['errorLoginMsg'] . "</h4>";
-  }
-?>
-
-    <form action="#" method="post">
-    <label>UserName :</label>
-    <input id="username" name="username" placeholder="username" type="text">
-    <label>Password :</label>
-    <input id="password" name="password" placeholder="**********" type="password">
-    <input name="submit" type="submit" value=" Login ">
-    </form>
-
-
+<div class="subNav">
+  <a href="/">Back To Home</a>
 </div>
 
+
+<div class="Container">
+  <h1>Administration Login: </h1>
+  <div id="login">
+  <?php
+    if(isset($_SESSION['errorLoginMsg'])){
+        echo "<h4>" . $_SESSION['errorLoginMsg'] . "</h4>";
+    }
+  ?>
+
+      <form action="#" method="post">
+      <label>Username :</label>
+      <input id="username" name="username" placeholder="username" type="text">
+      <label>Password :</label>
+      <input id="password" name="password" placeholder="**********" type="password">
+      <input name="submit" type="submit" value=" Login ">
+      </form>
+
+
+  </div>
+</div>
 <?php
 include '../Partials/_footer.php';
 ?>

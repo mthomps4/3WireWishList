@@ -35,7 +35,7 @@ VALUES (
   'https://lostartpress.com/collections/books/products/the-anarchists-tool-chest',
   '57.50',
   'Lost Art Press',
-  'The first volume is on tools and the second is on techniques. There is little doubt that Charles H. Hayward (1898-1998) was the most important workshop writer and editor of the 20th century. Unlike any person before (and perhaps after) him, Hayward was a trained cabinetmaker and extraordinary illustrator, not to mention an excellent designer, writer, editor and photographer.',
+  'This book, “The Anarchist’s Tool Chest,” paints a world where woodworking tools are at the center of an ethical life filled with creating furniture that will last for generations. It makes the case that you can build almost anything with a kit of fewer than 50 high-quality tools, and it shows you how to select real working tools, regardless of their vintage or brand name. “The Anarchist’s Tool Chest” will guide you in building a proper chest for your toolkit that follows the ancient rules that have been forgotten or ignored.',
   '0'
 );
 
@@ -88,7 +88,7 @@ VALUES (
   'http://www.walkemooretools.com/shop/router-plane-model-2500/',
   '290.00',
   'Walke | Moore Tools',
-  'This has easily been our most anticipated tool to date and it’s a monster.  Based on the Preston 2500P, it is the largest, heaviest, and most versatile router plane ever produced.',
+  'This has easily been our most anticipated tool to date and it\’s a monster.  Based on the Preston 2500P, it is the largest, heaviest, and most versatile router plane ever produced.',
   '0'
 );
 

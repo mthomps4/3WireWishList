@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../inc/functions.php';
 
 if (isset($_GET['id'])){
@@ -17,25 +18,29 @@ if (isset($_GET['id'])){
   $NotesWrap = wordwrap($Notes, 20, "<br>");
 }
 
-
 include '../Partials/_header.php';
 ?>
-
-<h1>Deatails</h1>
-<a href="/"> Back To Home Page </a>
-
-
-<div>
-    <div>
-      <img class="" src"<?php echo $ImageUrl; ?>" alt="BOOM" />
-    </div>
-
-    <div>
-    <h3><?php echo $Name; ?></h3>
-    <p><b>From: </b><?php echo $Source . " -- " . $SourceUrl; ?></p>
-    <p><b>Price: </b><?php echo $Price; ?></p>
-    <p><b>Obtained: </b><?php if($Obtained == 0){echo "Nope.. Not yet";}else{echo "Yes, I'm one step closer";} ?></p>
-    <p><b>Notes: </b><?php echo $Notes; ?></p>
-    </div>
-
+<div class="subNav">
+  <a href="/">Back To Home</a>
 </div>
+
+<div class="Container">
+    <div class="detailsImage">
+      <img class="" src="<?php echo "$ImageUrl"; ?>" alt="BOOM" />
+    </div>
+
+  <div class="detailsCard">
+      <h3 class="detailTitle"><?php echo $Name; ?></h3>
+      <p><b>From: </b><?php echo $Source . " -- " . "<a href='" . $SourceUrl . "' target='_blank'>Visit Their Website </a>"; ?></p>
+      <p><b>Price: </b>$<?php echo $Price; ?></p>
+      <p><b>Obtained: </b><?php if($Obtained == 0){echo "Nope.. Not yet";}else{echo "Yep, I'm one step closer";} ?></p>
+      <p><b>Notes: </b><?php echo $Notes; ?></p>
+  </div>
+</div>
+
+
+
+
+<?php
+include '../Partials/_footer.php';
+?>

@@ -6,6 +6,8 @@ Dark Blue Gray #263238
 
 **************** */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
 *{
   box-sizing: border-box;
 }
@@ -16,6 +18,7 @@ ul,li,a{
 
 body{
   background-color:#eee;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*****HEADER *****/
@@ -29,6 +32,9 @@ header{
 header h1{
   margin-right: auto;
   margin-left:10%;
+  font-family: 'Roboto', sans-serif;
+  font-size:2.5em;
+  font-weight: 100;
 }
 
 header button{
@@ -38,7 +44,6 @@ header button{
   background-color: #0277BD;
   border-radius:10% 30%;
   color:white;
-
   transition:.5s;
 }
 
@@ -52,17 +57,60 @@ header button:hover{
   background-color:green;
 }
 
+.subNav{
+  width:100%;
+  display:flex;
+  background-color:#424242;
+}
+
+hr{
+  margin:0;
+  padding:0;
+}
+
+.subNav a{
+  margin-left: auto;
+  margin-right: 10%;
+  padding:5px;
+  color:white;
+  opacity: .83;
+  }
+
+.subNav a:hover{
+  opacity:1;
+}
+
+/*****Footer *****/
+footer{
+  padding-top:40px;
+  clear:both;
+}
+
+footer p{
+  margin-left: 5%;
+}
+
+
 /*****HOME PAGE *****/
 .Container{
   width:90%;
   margin:0 auto;
+  margin-top:2em;
+}
+
+.Container h1{
+  font-weight: 100;
+
 }
 
 #Filter{
   display: flex;
   align-items: center;
-  float:right;
   margin-right: 10%;
+}
+
+#Filter h1{
+  margin-right: auto;
 }
 
 #Filter p{
@@ -89,7 +137,6 @@ header button:hover{
   box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
 }
 
-
 .imageWrap{
   width:100%;
   height:200px;
@@ -98,7 +145,7 @@ header button:hover{
   border-top-right-radius: 10%;
   border-top-left-radius: 10%;
   border:2px solid black;
-  border-bottom:6px solid black;
+  border-bottom:4px solid black;
 }
 
 .cardImage{
@@ -131,4 +178,84 @@ header button:hover{
 
 .cardMoreDetails:hover, .cardSourceSite:hover{
   opacity:1;
+}
+
+/*****DETAILS PAGE *****/
+
+.detailsImage{
+  margin:0;
+  padding:0;
+  width:40%;
+  float:left;
+  background-color: black;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+}
+
+.detailsImage img{
+  width:100%;
+  height: fill;
+  clear:both;
+}
+
+.detailsCard{
+  width:50%;
+  float:right;
+}
+
+.detailTitle{
+  text-align: center;
+}
+
+/*****Admin Dashboard Page *****/
+#AdminTable tr:nth-child(even){
+  background-color:#ddd;
+}
+
+#AdminTable td{
+  padding:10px;
+}
+
+#AdminTable a{
+  color:white;
+}
+
+.editButton{
+  width:100%;
+  margin:5px;
+  padding:5px;
+  background-color:#FF9800;
+  transition:.2s;
+}
+
+.editButton:hover{
+  background-color:#EF6C00;
+}
+
+.deleteButton{
+  width:100%;
+  margin:5px;
+  padding:5px;
+  background-color:#B71C1C;
+  transition:.1s;
+}
+
+.deleteButton:hover{
+  background-color:red;
+}
+
+.addButton{
+  background-color:#689F38;
+  border-radius: 10px;
+  margin-right: auto;
+  padding:5px 15px;
+}
+
+.addButton a, .addButton a:visited{
+  color:white;
+}
+
+.addButton:hover{
+  background-color: #8BC34A;
 }

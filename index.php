@@ -21,6 +21,7 @@ include './Partials/_header.php';
 
 
 <div id="Filter">
+  <h1></h1>
   <p>Filter Results:</p>
       <form method='post' action='#'>
           <select name="Filter">
