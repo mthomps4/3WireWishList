@@ -1,7 +1,6 @@
 # 3WireWishList
 A resource wish list for woodworking (Books, Tools, Other)
 
-
 ## Instructions to Run
 ### Pull Folder and Create Root
 Move folder to root or change DocumentRoot in Apache Httpd.config.
@@ -66,4 +65,6 @@ Navigate to localhost/ and have a test run.
 
 > *Amount of Dashboard information available changes based on screen resolution (Desktop1, Desktop2, Tablet, Phone)*
 
-![alt tag](../inc/TestShot.PNG)
+
+
+![Desktop Image](https://github.com/mthomps4/3WireWishList/blob/master/inc/TestShot.PNG?raw=true)
