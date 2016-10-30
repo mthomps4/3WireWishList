@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `3WireWish` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE DATABASE IF NOT EXISTS `3WireWish` DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 USE `3WireWish`;
 
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `WishList` (
     `URL` varchar(255) default '',
     `PRICE` decimal(6,2) NOT NULL default '0.00',
     `SOURCE` varchar(255) NOT NULL default '',
-    `NOTES` varchar(255) default '',
+    `NOTES` text default '',
     `OBTAINED` boolean NOT NULL default '0',
     PRIMARY KEY  (`ID`)
 );
@@ -24,8 +24,6 @@ CREATE TABLE IF NOT EXISTS `ADMIN-USER` (
 
 INSERT INTO `ADMIN-USER` (`USERNAME`, `PASSWORD`) VALUES ("Admin", "password");
 
---INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`) VALUES (NULL, 'Book1 ', 'Book', 'ImageURL', 'SourceURL', '9.99', 'Lost Art Press', 'A lot of Notes ... ', '0');
-
 INSERT INTO `wishlist` (`ID`, `NAME`, `TYPE`, `IMAGE`, `URL`, `PRICE`, `SOURCE`, `NOTES`, `OBTAINED`)
 VALUES (
   NULL,
@@ -35,7 +33,7 @@ VALUES (
   'https://lostartpress.com/collections/books/products/the-anarchists-tool-chest',
   '57.50',
   'Lost Art Press',
-  'This book, “The Anarchist’s Tool Chest,” paints a world where woodworking tools are at the center of an ethical life filled with creating furniture that will last for generations. It makes the case that you can build almost anything with a kit of fewer than 50 high-quality tools, and it shows you how to select real working tools, regardless of their vintage or brand name. “The Anarchist’s Tool Chest” will guide you in building a proper chest for your toolkit that follows the ancient rules that have been forgotten or ignored.',
+  'This book, \"The Anarchist\'s Tool Chest,\" paints a world where woodworking tools are at the center of an ethical life filled with creating furniture that will last for generations. It makes the case that you can build almost anything with a kit of fewer than 50 high-quality tools, and it shows you how to select real working tools, regardless of their vintage or brand name. \"The Anarchist\'s Tool Chest\" will guide you in building a proper chest for your toolkit that follows the ancient rules that have been forgotten or ignored.',
   '0'
 );
 
@@ -74,7 +72,7 @@ VALUES (
   'https://theunpluggedwoodshop.myshopify.com/collections/books/products/the-unplugged-woodshop-book',
   '30.00',
   'The Unplugged Woodshop',
-  'Unplugged – no power tools needed! For the growing number of woodworkers who are opting out of power tools and returning to hand tools, The Unplugged Woodshop is a refreshing concept and a welcome change. Written by custom furniture maker and hand tool expert Tom Fidgen, this new book promises to be as successful as his first book, Made by Hand.',
+  'Unplugged \- no power tools needed! For the growing number of woodworkers who are opting out of power tools and returning to hand tools, The Unplugged Woodshop is a refreshing concept and a welcome change. Written by custom furniture maker and hand tool expert Tom Fidgen, this new book promises to be as successful as his first book, Made by Hand.',
   '0'
 );
 
@@ -88,7 +86,7 @@ VALUES (
   'http://www.walkemooretools.com/shop/router-plane-model-2500/',
   '290.00',
   'Walke | Moore Tools',
-  'This has easily been our most anticipated tool to date and it\’s a monster.  Based on the Preston 2500P, it is the largest, heaviest, and most versatile router plane ever produced.',
+  'This has easily been our most anticipated tool to date and it\'s a monster.  Based on the Preston 2500P, it is the largest, heaviest, and most versatile router plane ever produced.',
   '0'
 );
 
@@ -140,7 +138,7 @@ VALUES (
   'http://www.leevalley.com/US/wood/Page.aspx?p=71379&cat=1,230',
   '44.50',
   'Veritas',
-  'With this kit (and basic woodworking skills) you can build a bevel-down wood-bodied smooth plane with a Norris-style mechanism for easy depth and lateral adjustment. The kit includes a blade, a Norris-style adjuster with a steel cup to seat it in, plus a knob, tapped insert and cross pin for the lever cap, all made of brass. The lapped blade (available in A2, O1 or PM-V11® steel) is 1/8in thick and 1-5/8in wide with a 25° bevel.',
+  'With this kit (and basic woodworking skills) you can build a bevel-down wood-bodied smooth plane with a Norris-style mechanism for easy depth and lateral adjustment. The kit includes a blade, a Norris-style adjuster with a steel cup to seat it in, plus a knob, tapped insert and cross pin for the lever cap, all made of brass. The lapped blade (available in A2, O1 or PM-V11 steel) is 1/8in thick and 1-5/8in wide with a 25deg bevel.',
   '1'
 );
 
@@ -170,53 +168,3 @@ VALUES (
   'Your tools are an investment, and should be treated accordingly. Proper protection from the outside world is essential in order to keep your tools in proper working order. Our waxed canvas tool rolls are designed to accommodate a wide variety of tools across a wide range of trades and disciplines.The rolls are constructed of 14.7 oz. waxed cotton canvas. The waxed canvas is ideal for several reasons. When the wax is applied to the cotton, the fibers swell, creating a stronger material that is less susceptible to normal wear and tear. The waxed canvas creates a powerful moisture barrier, protecting your tools from accidental spills or water ingress. This wax treatment is renewable, allowing you to maintain a high level of protection for the life of the roll. The wax refinishing compound is available in our General Store. A unique quality of the waxed fabric is that it has a "memory". Once it has been initially rolled up, the canvas takes the shapes of the tools it protects. The canvas will now work with ease, falling back into place as it rolls up. The more this material is used, the better it feels and performs.',
   '0'
 );
-
-
--- CHISEL/CARVING TOOL ROLLS
---http://www.txheritage.net/chisel-rolls
---https://c6.staticflickr.com/6/5556/30565000181_48d8f44f1b_o.jpg
-
-
--- Winding Sticks
--- http://www.leevalley.com/US/wood/page.aspx?p=53276&cat=1,230,41182
--- https://c7.staticflickr.com/6/5557/30019977814_217c72a994_c.jpg
-
--- HoldFasts
--- https://www.toolsforworkingwood.com/store/item/MS-HOLDFAST.XX/Holdfasts_by_Gramercy_Tools
--- https://c5.staticflickr.com/6/5787/30019977884_5893baf232.jpg
-
-
--- Narex Mortise Chisel Set -- Tools
--- http://www.leevalley.com/US/Wood/page.aspx?p=66737&cat=1,41504
--- https://c2.staticflickr.com/6/5573/30651377225_9da657536e_o.jpg
-
-
--- Mortise * Ten Issue Two -- Other
--- http://mortise-tenon-magazine.myshopify.com/collections/magazine/products/issue-two
--- https://c6.staticflickr.com/6/5687/30651377285_26b9248146_o.jpg
-
-
--- https://lostartpress.com/collections/books/products/the-anarchists-tool-chest
--- https://c7.staticflickr.com/6/5767/30019977974_dc0ea261da_o.jpg
-
--- https://lostartpress.com/collections/books/products/by-hand-eye-1
--- https://c1.staticflickr.com/6/5685/30534462472_47ca063f15_o.jpg
-
--- https://lostartpress.com/collections/books/products/the-woodworker-the-charles-hayward-years
--- https://c5.staticflickr.com/6/5667/30534462732_b9a9107f14_o.jpg
-
--- The Unplugged Woodshop: Hand-Crafted Projects for the Home & Shop
--- https://theunpluggedwoodshop.myshopify.com/collections/books/products/the-unplugged-woodshop-book
--- https://c1.staticflickr.com/6/5502/30534462512_32b017159f_o.jpg
-
--- RouterPlane
--- http://www.leevalley.com/US/Wood/page.aspx?p=52609&cat=1
--- https://c6.staticflickr.com/6/5608/30651377085_04175d94ac_o.jpg
-
--- http://www.walkemooretools.com/shop/router-plane-model-2500/
--- https://c6.staticflickr.com/6/5342/30651377365_13266a4d55_o.jpg
-
-
--- Veritas® Wooden Bench Plane Hardware
--- http://www.leevalley.com/US/Wood/page.aspx?p=74621&cat=1,41182,46334&ap=1
--- https://c1.staticflickr.com/6/5636/30615359776_f4be03b920_o.jpg
