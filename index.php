@@ -24,7 +24,15 @@ include './Partials/_header.php';
   $filter = "false";//Set Filter with DropDown Select set "" option = "false"
   $wishlist = getWishList($filter);
   foreach($wishlist as $item){
-    echo "<p>". $item['NAME'] ."</p>";
+    echo "<div class='itemCard'>";
+      echo "<img class='cardImage' src='". $item['IMAGE'] . "' />";
+      echo "<h3 class='title'>" . $item['NAME'] . "</h3>";
+
+      echo "<p><b>Maker/Athor: </b>". $item['SOURCE'] ."</p>";
+      echo "<p><b>Price: </b>". $item['PRICE'] ."</p>";
+      echo "<p>". $item['URL'] ."</p>";
+      echo "<a href='../Views/details.php/?id=" . $item['ID'] . "'> More Details ... </a>";
+    echo "</div>";
   }
   ?>
 </div>
